@@ -1,0 +1,42 @@
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .custom-card{
+    margin-bottom: 20px;
+  }
+}
+.share-icon {
+  background-color: #384bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  position: absolute;
+  right: 4%;
+  bottom: 21%;
+}
+.icon {
+  color: #fff;
+  font-size: 22px;
+}
+.card-img {
+  height: 250px;
+  border-top-left-radius: 15px; /* Match the card's border radius */
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  background-color: #18185e;
+  border-bottom-left-radius: 15px; /* Match the card's border radius */
+  border-bottom-right-radius: 15px;
+  color: white; /* Ensure text is readable */
+  text-align: center; /* Center align text for a clean look */
+}

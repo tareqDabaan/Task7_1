@@ -1,0 +1,101 @@
+
+.after-cyber {
+  visibility: hidden;
+}
+
+.services-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  list-style: none;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list ul li {
+  color: #0f0d1d;
+}
+.services-list ul li img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+
+.title a{
+  text-decoration: none;
+  color: #384bff;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.title a::before{
+  content: "←";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.title a::after{
+  content: "→";
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.title a:hover{
+  color: #2c3fdb;
+  transform: translateY(3px);
+
+}
+
+.title h2{
+  color: #0f0d1d;
+}
+
+.all-members-btn {
+  border-radius: 50px;
+  background-color: #384bff;
+  width: 150px;
+  height: 40px;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.all-members-btn:hover {
+  background-color: #2c3fdb; /* Darker shade for hover effect */
+  transform: translateY(3px);
+}
+.all-members-arrow {
+  color: #fff;
+  margin-left: 5px;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 1024px) {
+  .services-list {
+    margin-top: 45px;
+    margin-bottom: -30px;
+  }
+  .data-science,
+  .it,
+  .tech {
+    display: none;
+  }
+  .after-cyber {
+    visibility: visible;
+    margin-left: 20px;
+    width: 30px;
+  }
+  .title{
+    margin-top: -30px;
+  }
+  .all-members-btn{
+    margin-top: 60px;
+  }
+}

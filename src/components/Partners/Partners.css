@@ -1,0 +1,53 @@
+.explore-circle{
+  width: 100px;
+  height: 100px;
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; /* Centers the logos */
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .brand-logos img{
+    width: 150px;
+  }
+.swap-container{
+  display: flex;
+  gap: 10px;
+} 
+.swap-container .left-arr{
+  width: 50px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;  
+
+  align-items: center;
+  background-color: #f4eaea;
+}
+.swap-container .right-arr{
+  width: 50px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1928b0;
+}
+
+  @media (max-width: 900px) {
+    .brand-logos {
+      flex-direction: row; /* Row layout */
+      justify-content: space-evenly;
+    }
+  
+    .brand-logo {
+      width: 90px; /* Slightly reduce logo size */
+    }
+  }

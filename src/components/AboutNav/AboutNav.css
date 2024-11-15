@@ -1,0 +1,120 @@
+:root {
+  --mainColor: #29335c;
+  --mainColor: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
+
+header {
+  display: flex;
+  position: relative;
+  gap: 9rem;
+  justify-content: start;
+  height: 60px;
+  padding-left: 2px;
+  background-color: #ffffff;
+  color: var(--textColor);
+}
+.plane {
+  width: 80px;
+}
+.logo {
+  width: 120px;
+}
+nav a {
+  margin: 0 14px;
+  font-size: 16px;
+  color: #0f0d1d;
+  text-decoration: none;
+}
+.search {
+  color: black;
+  font-size: 16px;
+}
+.nav-right-button {
+  position: absolute;
+  right: 25px;
+  width: 400px;
+  margin-right: -25px;
+  background-color: #384bff;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding-left: 20px;
+  height: 100%;
+  text-align: center;
+}
+.get-quote-btn {
+  background-color: #ffffff;
+  color: #0f0d1d;
+  position: absolute;
+  bottom: 11px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.arrow{
+  color: #000;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    justify-content: space-around;
+  }
+
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    color: #000;
+  }
+  .nav-right-button,
+  .plane {
+    display: none;
+  }
+  .logo {
+    margin-left: -10px;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
